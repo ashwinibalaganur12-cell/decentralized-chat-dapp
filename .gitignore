@@ -58,3 +58,4 @@ node_modules/
 dist/
 cache/
 artifacts/
+HARDHAT_ACCOUNTS.txt
