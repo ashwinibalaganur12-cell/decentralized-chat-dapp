@@ -1,0 +1,51 @@
+.connect-wallet-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%);
+}
+
+.connect-card {
+    padding: 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    max-width: 480px;
+    width: 90%;
+}
+
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.wallet-icon {
+    color: var(--accent-primary);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.connect-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+}

@@ -1,0 +1,84 @@
+﻿node.exe : An 
+unexpected error 
+occurred:
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (An unex   
+ pected error occ    
+urred::String) [    
+], RemoteExcepti    
+on
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+Error [ERR_PACKAGE_PA
+TH_NOT_EXPORTED]: 
+Package subpath 
+'./common/bigInt' is 
+not defined by 
+"exports" in E:\colle
+g_project\node_module
+s\hardhat\package.jso
+n
+    at 
+exportsNotFound (node
+:internal/modules/esm
+/resolve:313:10)
+    at packageExports
+Resolve (node:interna
+l/modules/esm/resolve
+:660:9)
+    at 
+resolveExports (node:
+internal/modules/cjs/
+loader:650:36)
+    at 
+Function._findPath (n
+ode:internal/modules/
+cjs/loader:717:31)
+    at node:internal/
+modules/cjs/loader:13
+69:27
+    at 
+m._resolveFilename (f
+ile:///E:/colleg_proj
+ect/node_modules/tsx/
+dist/register-B7jrtLT
+O.mjs:1:789)
+    at 
+defaultResolveImpl (n
+ode:internal/modules/
+cjs/loader:1025:19)
+    at resolveForCJSW
+ithHooks (node:intern
+al/modules/cjs/loader
+:1030:22)
+    at 
+Function._load (node:
+internal/modules/cjs/
+loader:1192:37)
+    at TracingChannel
+.traceSync (node:diag
+nostics_channel:328:1
+4) {
+  code: 'ERR_PACKAGE_
+PATH_NOT_EXPORTED'
+}
+
+If you think this is 
+a bug in Hardhat, 
+please report it 
+here: https://hardhat
+.org/report-bug

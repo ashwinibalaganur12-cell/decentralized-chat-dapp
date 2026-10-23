@@ -1,0 +1,111 @@
+﻿node.exe : An 
+unexpected error 
+occurred:
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (An unex   
+ pected error occ    
+urred::String) [    
+], RemoteExcepti    
+on
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+Error: Cannot find 
+module 'chai'
+Require stack:
+- E:\colleg_project\n
+ode_modules\@nomicfou
+ndation\hardhat-chai-
+matchers\internal\add
+-chai-matchers.js
+- E:\colleg_project\n
+ode_modules\@nomicfou
+ndation\hardhat-chai-
+matchers\index.js
+- E:\colleg_project\n
+ode_modules\@nomicfou
+ndation\hardhat-toolb
+ox\index.js
+    at node:internal/
+modules/cjs/loader:13
+83:15
+    at 
+m._resolveFilename (f
+ile:///E:/colleg_proj
+ect/node_modules/tsx/
+dist/register-B7jrtLT
+O.mjs:1:789)
+    at 
+defaultResolveImpl (n
+ode:internal/modules/
+cjs/loader:1025:19)
+    at resolveForCJSW
+ithHooks (node:intern
+al/modules/cjs/loader
+:1030:22)
+    at 
+Function._load (node:
+internal/modules/cjs/
+loader:1192:37)
+    at TracingChannel
+.traceSync (node:diag
+nostics_channel:328:1
+4)
+    at 
+wrapModuleLoad (node:
+internal/modules/cjs/
+loader:237:24)
+    at 
+Module.require (node:
+internal/modules/cjs/
+loader:1463:12)
+    at require (node:
+internal/modules/help
+ers:147:16)
+    at 
+Object.<anonymous> (E
+:\colleg_project\node
+_modules\@nomicfounda
+tion\hardhat-chai-mat
+chers\src\internal\ad
+d-chai-matchers.ts:1:
+1) {
+  code: 
+'MODULE_NOT_FOUND',
+  requireStack: [
+    'E:\\colleg_proje
+ct\\node_modules\\@no
+micfoundation\\hardha
+t-chai-matchers\\inte
+rnal\\add-chai-matche
+rs.js',
+    'E:\\colleg_proje
+ct\\node_modules\\@no
+micfoundation\\hardha
+t-chai-matchers\\inde
+x.js',
+    'E:\\colleg_proje
+ct\\node_modules\\@no
+micfoundation\\hardha
+t-toolbox\\index.js'
+  ]
+}
+
+If you think this is 
+a bug in Hardhat, 
+please report it 
+here: https://hardhat
+.org/report-bug

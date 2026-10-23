@@ -1,0 +1,183 @@
+.message-wrapper {
+    display: flex;
+    margin-bottom: 0.5rem;
+    animation: messageSlideIn 0.3s ease-out;
+}
+
+.message-wrapper.own {
+    justify-content: flex-end;
+}
+
+.message-wrapper.other {
+    justify-content: flex-start;
+}
+
+/* Message grouping spacing */
+.message-wrapper.first {
+    margin-top: 1rem;
+}
+
+.message-wrapper.last {
+    margin-bottom: 1rem;
+}
+
+.message-bubble {
+    max-width: 70%;
+    padding: 0.75rem 1rem;
+    border-radius: 1.25rem;
+    word-wrap: break-word;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.own .message-bubble {
+    background: var(--accent-gradient);
+    color: white;
+    border-bottom-right-radius: 0.375rem;
+}
+
+.other .message-bubble {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-bottom-left-radius: 0.375rem;
+}
+
+.message-bubble:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.message-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    margin-bottom: 0.25rem;
+}
+
+.message-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-top: 0.25rem;
+}
+
+.message-time {
+    font-weight: 500;
+}
+
+.own .message-time {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.other .message-time {
+    color: var(--text-secondary);
+}
+
+.message-status {
+    display: flex;
+    align-items: center;
+}
+
+.status-icon {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.status-icon.sent {
+    opacity: 0.6;
+}
+
+.status-icon.delivered {
+    opacity: 0.8;
+}
+
+.status-icon.read {
+    opacity: 1;
+    color: #60a5fa;
+}
+
+/* Animations */
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .message-bubble {
+        max-width: 85%;
+        padding: 0.65rem 0.85rem;
+    }
+
+    .message-content {
+        font-size: 0.9rem;
+    }
+
+    .message-meta {
+        font-size: 0.65rem;
+    }
+}
+
+/* Link Styling */
+.message-link {
+    text-decoration: underline;
+    word-break: break-all;
+    font-weight: 500;
+}
+
+.own .message-link {
+    color: #e0f2fe;
+    /* Light blue text on own messages */
+}
+
+.own .message-link:hover {
+    color: #ffffff;
+}
+
+.other .message-link {
+    color: #3b82f6;
+    /* Blue text on other messages */
+}
+
+.other .message-link:hover {
+    color: #2563eb;
+}
+
+/* Image Styling */
+.message-image-container {
+    margin: 0.5rem 0;
+}
+
+.message-image {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: block;
+    min-width: 50px;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Gray placeholder */
+}
+
+.message-image:hover {
+    transform: scale(1.02);
+}
+.sender-name {
+    font-size: 0.75rem;
+    color: var(--text-secondary); /* Or a specific color like #a1a1aa */
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    opacity: 0.9;
+}

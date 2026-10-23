@@ -1,0 +1,82 @@
+﻿node.exe : [31mAn 
+unexpected error 
+occurred:[39m
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([31mAn   
+  unexpected erro    
+r occurred:[39m    
+:String) [], Rem    
+oteException
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+Error: Cannot find 
+module 'E:\colleg_pro
+ject\node_modules\har
+dhat\types\network' 
+imported from E:\coll
+eg_project\node_modul
+es\@nomicfoundation\h
+ardhat-ethers\dist\sr
+c\type-extensions.js
+    at 
+finalizeResolution (n
+ode:internal/modules/
+esm/resolve:274:11)
+    at moduleResolve 
+(node:internal/module
+s/esm/resolve:859:10)
+    at 
+defaultResolve (node:
+internal/modules/esm/
+resolve:983:11)
+    at ModuleLoader.#
+cachedDefaultResolve 
+(node:internal/module
+s/esm/loader:731:20)
+    at ModuleLoader.#
+resolveAndMaybeBlockO
+nLoaderThread (node:i
+nternal/modules/esm/l
+oader:767:38)
+    at ModuleLoader.r
+esolveSync (node:inte
+rnal/modules/esm/load
+er:790:52)
+    at ModuleLoader.#
+cachedResolveSync (no
+de:internal/modules/e
+sm/loader:750:25)
+    at ModuleLoader.g
+etModuleJobForRequire
+ (node:internal/modul
+es/esm/loader:459:50)
+    at new 
+ModuleJobSync (node:i
+nternal/modules/esm/m
+odule_job:392:34)
+    at ModuleLoader.g
+etModuleJobForRequire
+ (node:internal/modul
+es/esm/loader:522:11)
+ {
+  code: 'ERR_MODULE_N
+OT_FOUND',
+  url: 'file:///E:/co
+lleg_project/node_mod
+ules/hardhat/types/ne
+twork'
+}
