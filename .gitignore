@@ -59,3 +59,6 @@ dist/
 cache/
 artifacts/
 HARDHAT_ACCOUNTS.txt
+
+# Hardhat local accounts
+HARDHAT_ACCOUNTS.txt
